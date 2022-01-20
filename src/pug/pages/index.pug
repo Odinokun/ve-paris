@@ -1,21 +1,15 @@
 extends ../_template
 
 block variables
-  - var title       = 'Index'
+  - var title       = 'ViSENGINE'
   - var description = ''
-  - var ogtitle     = ''
-  - var ogimage     = ''
-
-  - var pageHeaderTitle = ''
-  - var breadcrumbs     = 'breadcrumbs link'
 
 block content
-  .main-wrap.no-js
+  .main-wrap
     include ../sections/header
 
-    //begin content
-    main.main.index
-    //end content
+    main.main
+      include ../sections/top
 
     include ../sections/footer
     include ../sections/scripts

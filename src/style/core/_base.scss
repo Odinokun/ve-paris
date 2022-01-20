@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-bold;
+  font-family: $title;
   font-weight: 400;
   margin: 0 0 10px 0;
 }
@@ -61,15 +61,13 @@ h6 {
 
 p {
   margin: 0 0 10px 0;
-  strong {
-    font-family: $font-bold;
-  }
 }
 
 a {
   transition: color $transition-hover;
   text-decoration: none;
   color: $link;
+
   &:hover {
     color: $link-hov;
   }
@@ -129,44 +127,20 @@ svg {
   overflow: visible;
 }
 
-// подсвечиваем картинки без alt и без заполненного alt
-img[alt=''],
-img:not([alt]) {
-  outline: 5px solid tomato;
-}
-
-// исключение для google-map и fancybox
-.fancybox-container img[alt=''],
-.fancybox-container img:not([alt]),
-.gm-style img[alt=''],
-.gm-style img:not([alt]) {
-  outline: none !important;
-}
-
-// тревога, если первый child внутри списка не li и прочие похожие примеры
-ul > *:not(li),
-ol > *:not(li) {
-  outline: 5px solid tomato;
-}
-
 //изменяем цвет выделения текста мышью
 ::selection {
-  // background-color: $brand;
-  // color: $brand;
-  // text-shadow: none;
+   background-color: $highlight;
+   color: #fff;
+   text-shadow: none;
 }
 
 .main-wrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  //свойство для исправления бага 100vh для мобильных
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height:         fill-available;
-  //свойство для плавной прокрутки на яблоках
 
   -webkit-overflow-scrolling: touch;
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -182,4 +156,40 @@ ol > *:not(li) {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.container--paddings {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.btn {
+  font-family: 'Huova', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 25px 10px 25px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $transition-hover;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 2px !important;
+  background-color: $highlight;
+  box-shadow: none;
+
+  @include responsive-font(30, 18);
+  @include min(768) {
+    padding: 18px 40px 15px 40px;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $highlight-hov;
+  }
 }

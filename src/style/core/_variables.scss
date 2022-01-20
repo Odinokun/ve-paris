@@ -1,7 +1,7 @@
 // ===== main colors =====
-$brand: #00407a;
-$highlight: #D83612;
-$highlight-hov: darken($highlight, 5%);
+$brand: #26b4b7;
+$highlight: #e6194d;
+$highlight-hov: lighten($highlight, 5%);
 
 // ===== text colors =====
 $text: #181a19;
@@ -14,5 +14,5 @@ $link-hov: lighten($link, 25%);
 $transition-hover: .3s ease-in-out;
 
 // ===== fonts =====
-$font:      'OpenSans', sans-serif;
-$font-bold: 'OpenSans-Bold', sans-serif;
+$font: 'Constantia', sans-serif;
+$title: 'Huova', sans-serif;
