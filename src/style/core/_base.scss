@@ -13,7 +13,7 @@ body {
 
 html {
   font-family: $font;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.38;
   color: $text;
 }
@@ -59,7 +59,17 @@ h6 {
   @include responsive-font(20, 16);
 }
 
+p,
+span,
+a,
+li {
+  line-height: 1.2;
+
+  @include responsive-font(24, 16);
+}
+
 p {
+  display: inline-block;
   margin: 0 0 10px 0;
 }
 
@@ -129,9 +139,9 @@ svg {
 
 //изменяем цвет выделения текста мышью
 ::selection {
-   background-color: $highlight;
-   color: #fff;
-   text-shadow: none;
+  color: #fff;
+  background-color: $highlight;
+  text-shadow: none;
 }
 
 .main-wrap {
@@ -153,14 +163,14 @@ svg {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .container--paddings {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .btn {
@@ -192,4 +202,24 @@ svg {
     color: #fff;
     background-color: $highlight-hov;
   }
+}
+
+.title {
+  line-height: 1;
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include responsive-font(48, 22);
+}
+
+.subtitle {
+  line-height: 1;
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include responsive-font(30, 18);
 }
