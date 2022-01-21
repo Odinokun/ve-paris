@@ -1,0 +1,108 @@
+.video {
+  .container {
+    padding: 0;
+  }
+}
+
+.video__item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+
+  @include min(768) {
+    flex-direction: row;
+  }
+
+  &:nth-child(even) {
+    @include min(768) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.video__link {
+  position: relative;
+  //  display: block;
+  //  flex: none;
+  width: 100%;
+
+  @include min(768) {
+    width: 50%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.video__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  transition: .5s;
+  border-radius: 50%;
+  background-image: url('../img/video-btn.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.video__descr {
+  width: 100%;
+  margin-bottom: 32px;
+
+  @include min(768) {
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 64px;
+    padding-left: 32px;
+  }
+  @include min(1024) {
+    padding-top: 32px;
+  }
+}
+
+.video__item:nth-child(even) {
+  .video__descr {
+    @include min(768) {
+      padding-right: 32px;
+      padding-left: 64px;
+    }
+  }
+}
+
+.video__title {
+  color: $highlight;
+
+  @include min(768) {
+    text-align: left;
+  }
+}
+
+.video__subtitle {
+  @include min(768) {
+    text-align: left;
+  }
+}
+
+.video__text {
+  text-align: center;
+
+  @include min(768) {
+    text-align: left;
+  }
+
+  p {
+    display: block;
+  }
+}
