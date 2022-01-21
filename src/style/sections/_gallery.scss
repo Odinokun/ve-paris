@@ -1,0 +1,161 @@
+.gallery {
+  .container {
+    padding-bottom: 64px;
+  }
+}
+
+.gallery__subtitle {
+  color: $highlight;
+}
+
+.gallery__title {
+  margin-bottom: 32px;
+
+  @include min(768) {
+    margin-bottom: 64px;
+  }
+}
+
+.gallery__descr {
+  text-align: center;
+
+  p {
+    @include min(768) {
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 15px;
+  padding: 32px 32px 120px 32px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include min(768) {
+    width: calc(50% - 7px);
+    padding: 64px 64px 120px 64px;
+  }
+  @include min(1024) {
+    width: calc(33.33% - 10px);
+    min-height: 700px;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:first-child {
+    @include min(1024) {
+      width: 100%;
+      min-height: 1000px;
+      max-height: 100vh;
+
+      .gallery__item-title {
+        line-height: 1.2;
+        margin-bottom: 48px;
+
+        @include responsive-font(64, 32);
+      }
+
+      .gallery__item-descr {
+        p {
+          line-height: 1.5;
+          max-width: 900px;
+
+          @include responsive-font(24, 16);
+        }
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: '';
+    transition: .5s;
+    pointer-events: none;
+  }
+
+  &::before {
+    opacity: .3;
+    background-color: #000;
+  }
+
+  &::after {
+    opacity: 0;
+    background-color: $highlight;
+  }
+}
+
+.gallery__item-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.gallery__item-descr {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #fff;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      text-align: left;
+    }
+  }
+
+  p,
+  li {
+    line-height: 1.6;
+
+    @include responsive-font(16, 16);
+  }
+}
+
+.gallery__item-link {
+  position: absolute;
+  z-index: 1;
+  bottom: 64px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include responsive-font(18, 16);
+
+  &:hover {
+    color: #fff;
+  }
+}

@@ -165,14 +165,22 @@ svg {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0 64px;
+  padding: 0 24px;
+
+  @include min(768) {
+    padding: 0 64px;
+  }
 }
 
 .container--paddings {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 
   @include min(768) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include min(1024) {
     padding-top: 130px;
     padding-bottom: 130px;
   }
