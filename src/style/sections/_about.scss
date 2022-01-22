@@ -1,0 +1,23 @@
+.about__title {
+  color: $highlight;
+}
+
+.about__subtitle {
+  @include min(768) {
+    margin-bottom: 64px;
+  }
+}
+
+.about__descr {
+  text-align: center;
+
+  p {
+    @include min(768) {
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
