@@ -1,0 +1,28 @@
+.interactive {
+  .container {
+    padding-top: 0;
+  }
+}
+
+.interactive__title {
+  margin-bottom: 0;
+  color: $highlight;
+}
+
+.interactive__link {
+  display: block;
+  height: 800px;
+  max-height: 100vh;
+  margin-bottom: 56px;
+  background-image: url('../img/bg-interactive.jpeg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include min(768) {
+    margin-bottom: 80px;
+  }
+  @include min(1024) {
+    margin-bottom: 130px;
+  }
+}
