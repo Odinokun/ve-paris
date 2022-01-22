@@ -2,6 +2,7 @@ $(function() {
 
   // begin SVG for IE
   require('./modules/svg4everybody')();
+  require('./modules/ui')();
 
   // begin Scroll2Ancor
   // require('./modules/scroll2ancor')();
