@@ -1,41 +1,52 @@
-.header{
+.header {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
+  display: none;
   width: 100%;
-  z-index: 10;
   transition: .5s;
-  &.is-scroll{
+
+  @include min(1024) {
+    display: block;
+  }
+
+  &.is-scroll {
     background-color: #fff;
     box-shadow: 0 0 8px 0 rgba(34, 60, 80, .2);
 
-    .header__menu-link{
+    .header__menu-link {
       color: $text;
     }
   }
-  .container{
+
+  .container {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
   }
 }
 
-.header__menu{
+.header__menu {
   margin-left: auto;
 }
-.header__menu-link{
+
+.header__menu-link {
   display: flex;
   margin: 0;
-
-  padding: 0;list-style: none;
+  padding: 0;
+  list-style: none;
 }
-.header__menu-item{
+
+.header__menu-item {
   margin-left: 32px;
 }
-.header__menu-link{
-  color: #fff;
-  text-transform: uppercase;
+
+.header__menu-link {
   font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+
   &:hover {
     color: $highlight;
   }

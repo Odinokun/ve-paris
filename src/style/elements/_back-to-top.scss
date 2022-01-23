@@ -1,22 +1,35 @@
 .back-to-top {
   position: fixed;
   z-index: 10;
-  right: 32px;
-  bottom: 64px;
+  right: 16px;
+  bottom: 16px;
   display: none;
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 8px 0 rgba(34, 60, 80, .2);
+
+  @include min(768) {
+    right: 32px;
+    bottom: 64px;
+    width: 64px;
+    height: 64px;
+  }
+
   svg {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 32px;
-    height: 32px;
+    width: 8px;
+    height: 8px;
     margin: auto;
+
+    @include min(768) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
