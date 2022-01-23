@@ -238,3 +238,9 @@ svg {
 
   @include responsive-font(30, 18);
 }
+
+.fadeInLeft,
+.fadeInRight,
+.fadeInUp {
+  opacity: 0;
+}

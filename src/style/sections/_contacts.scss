@@ -12,13 +12,13 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
+
   @include min(768) {
     padding-top: 32px;
   }
-
   @include min(1024) {
-  padding-top: 64px;
     flex-direction: row;
+    padding-top: 64px;
   }
 }
 
@@ -37,9 +37,9 @@
 
 .contacts__form-section {
   width: 100%;
-  @include min(768) {
-  width: calc(50% - 8px);
 
+  @include min(768) {
+    width: calc(50% - 8px);
   }
 }
 

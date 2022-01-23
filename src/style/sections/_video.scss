@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 64px;
+  transition: .5s;
 
   @include min(768) {
     flex-direction: row;
@@ -40,23 +41,15 @@
 
 .video__btn {
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin: auto;
-  transition: .5s;
   border-radius: 50%;
-  background-image: url('../img/video-btn.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  &:hover {
-    opacity: .8;
-  }
 }
 
 .video__descr {
@@ -84,6 +77,7 @@
 }
 
 .video__title {
+  animation-delay: .35s;
   color: $highlight;
 
   @include min(768) {
@@ -92,6 +86,8 @@
 }
 
 .video__subtitle {
+  animation-delay: .5s;
+
   @include min(768) {
     text-align: left;
   }
@@ -106,5 +102,6 @@
 
   p {
     display: block;
+    animation-delay: .7s;
   }
 }

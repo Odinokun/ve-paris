@@ -31,6 +31,8 @@
 }
 
 .top__title {
+  opacity: 0;
+  transition: .5s;
   line-height: 1;
   margin-bottom: 48px;
   text-align: center;
@@ -43,10 +45,15 @@
 .top__subtitle {
   line-height: 1;
   display: block;
+  animation-delay: .5s;
   margin-bottom: 48px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
 
   @include responsive-font(30, 18);
+}
+
+.top__button {
+  animation-delay: .7s;
 }

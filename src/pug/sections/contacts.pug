@@ -7,7 +7,7 @@
     //- begin contacts__row
     .contacts__row
       //- begin contacts__form
-      form.contacts__form(action='https://formspree.io/f/mknynkol' method='post')
+      form.contacts__form.fadeInLeft.animate__animated(action='https://formspree.io/f/mknynkol' method='post')
         input.contacts__input.form-control(type='text' name='name' placeholder='Name *')
         input.contacts__input.form-control(type='text' name='lastname' placeholder='Last Name *')
         .contacts__form-section
@@ -274,19 +274,19 @@
       //- end   contacts__form
 
       .contacts__info
-        .contacts__info-subtitle.subtitle 42-44 Rue des Francs-Bourgeois, Paris, France
+        .contacts__info-subtitle.subtitle.fadeInUp.animate__animated 42-44 Rue des Francs-Bourgeois, Paris, France
         .contacts__links
-          a(href="tel:+442071124994").contacts__link
+          a(href="tel:+442071124994").contacts__link.fadeInUp.animate__animated
             +svg('phone')
             span + 44 207 112 4994
-          a(href="mailto:info@visengine.com").contacts__link
+          a(href="mailto:info@visengine.com").contacts__link.fadeInUp.animate__animated
             +svg('mail')
             span info@visengine.com
-          a(href="visengine.com" target='_blank').contacts__link
+          a(href="visengine.com" target='_blank').contacts__link.fadeInUp.animate__animated
             +svg('earth')
             span visengine.com
-        .contacts__info-subtitle.subtitle Social Media
-        .contacts__socials
+        .contacts__info-subtitle.subtitle.fadeInUp.animate__animated Social Media
+        .contacts__socials.fadeInUp.animate__animated
           a(href="https://www.facebook.com/VisEngineDigitalSolutions" target="_blank" rel="nofollow noopener noreferrer").contacts__social
             +svg('facebook')
           a(href="https://www.instagram.com/visengine_d_s/" target="_blank" rel="nofollow noopener noreferrer").contacts__social
