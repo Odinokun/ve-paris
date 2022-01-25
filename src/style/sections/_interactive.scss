@@ -11,15 +11,10 @@
 
 .interactive__link {
   display: block;
-  height: 800px;
+  height: 700px;
   max-height: 100vh;
-  margin-bottom: 56px;
-  background-image: url('../img/bg-interactive.jpeg');
+  background-image: url('../img/bg-interactive-comp.png');
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-
-  @include min(768) {
-    margin-bottom: 80px;
-  }
+  background-position: 50% 0;
+  background-size: contain;
 }
