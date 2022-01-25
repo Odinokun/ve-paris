@@ -11,6 +11,12 @@ module.exports = function() {
     $(this).addClass("animate__fadeInUp");
   }, {offset: "100%"});
 
+
+
+  $('.concept__icon').waypoint(function () {
+    $(this).addClass("is-active");
+  }, {offset: "70%"});
+
   // end Animate CSS + WayPoints javaScript Plugin
 
 };

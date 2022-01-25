@@ -1,5 +1,15 @@
 .contacts {
   background-color: #f6f6f6;
+
+  .container {
+    padding-top: 56px;
+    padding-bottom: 80px;
+
+    @include min(768) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
 }
 
 .contacts__subtitle {

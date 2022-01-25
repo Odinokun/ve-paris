@@ -1,6 +1,6 @@
 .interactive {
   .container {
-    padding-top: 0;
+    padding-bottom: 56px;
   }
 }
 
@@ -21,8 +21,5 @@
 
   @include min(768) {
     margin-bottom: 80px;
-  }
-  @include min(1024) {
-    margin-bottom: 130px;
   }
 }

@@ -57,7 +57,6 @@
   }
   @include min(1024) {
     width: calc(33.33% - 10px);
-    min-height: 700px;
   }
 
   &:hover {
@@ -69,7 +68,7 @@
   &:first-child {
     @include min(1024) {
       width: 100%;
-      min-height: 1000px;
+      min-height: 800px;
       max-height: 100vh;
 
       .gallery__item-title {
@@ -104,7 +103,7 @@
   }
 
   &::before {
-    opacity: .3;
+    opacity: .2;
     background-color: #000;
   }
 
@@ -125,23 +124,13 @@
 .gallery__item-descr {
   position: relative;
   z-index: 1;
-  text-transform: uppercase;
   color: #fff;
 
-  ul {
-    margin: 0;
-    padding: 0;
 
-    li {
-      text-align: left;
-    }
-  }
+  p {
+    line-height: 1.25;
 
-  p,
-  li {
-    line-height: 1.6;
-
-    @include responsive-font(16, 16);
+    @include responsive-font(18, 16);
   }
 }
 

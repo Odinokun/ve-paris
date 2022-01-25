@@ -12,7 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 700px;
+  max-height: 100vh;
   background-image: url('../img/bg-vr.jpeg');
   background-repeat: no-repeat;
   background-position: 50% 50%;

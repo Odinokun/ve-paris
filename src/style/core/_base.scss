@@ -65,7 +65,7 @@ a,
 li {
   line-height: 1.2;
 
-  @include responsive-font(24, 16);
+  @include responsive-font(21, 16);
 }
 
 p {
@@ -177,8 +177,8 @@ svg {
   padding-bottom: 56px;
 
   @include min(768) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   @include min(1024) {
     padding-top: 130px;
@@ -206,10 +206,7 @@ svg {
   background-color: $highlight;
   box-shadow: none;
 
-  @include responsive-font(30, 18);
-  @include min(768) {
-    padding: 18px 40px 15px 40px;
-  }
+  @include responsive-font(21, 16);
 
   &:hover {
     color: #fff;
@@ -225,7 +222,7 @@ svg {
   text-align: center;
   text-transform: uppercase;
 
-  @include responsive-font(48, 22);
+  @include responsive-font(40, 20);
 }
 
 .subtitle {
@@ -236,7 +233,7 @@ svg {
   text-align: center;
   text-transform: uppercase;
 
-  @include responsive-font(30, 18);
+  @include responsive-font(25, 16);
 }
 
 .fadeInLeft,

@@ -1,3 +1,12 @@
+.map{
+  .container{
+    padding-top: 56px;
+    padding-bottom: 16px;
+  }
+}
+.map__title{
+  color: $highlight;
+}
 .map__iframe {
   display: block;
   width: 100%;

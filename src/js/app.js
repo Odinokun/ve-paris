@@ -8,4 +8,5 @@ $(function() {
   require('./modules/bg-header')();
   require('./modules/back-to-top')();
   require('./modules/cookie')();
+  require('./modules/menu')();
 });

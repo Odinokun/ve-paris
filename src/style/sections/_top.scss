@@ -5,6 +5,7 @@
   background-position: 50% 50%;
   background-size: cover;
 
+
   &::before {
     position: absolute;
     top: 0;
@@ -25,33 +26,33 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
 }
 
 .top__title {
-  opacity: 0;
-  transition: .5s;
   line-height: 1;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
+  transition: .5s;
   text-align: center;
   text-transform: uppercase;
+  opacity: 0;
   color: #fff;
 
-  @include responsive-font(100, 24);
+  @include responsive-font(80, 24);
 }
 
 .top__subtitle {
   line-height: 1;
   display: block;
+  margin-bottom: 36px;
   animation-delay: .5s;
-  margin-bottom: 48px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
 
-  @include responsive-font(30, 18);
+  @include responsive-font(25, 16);
 }
 
 .top__button {

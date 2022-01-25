@@ -1,0 +1,103 @@
+.logo {
+  z-index: 10;
+  width: 100%;
+  max-width: 170px;
+
+  @include min(1340) {
+    max-width: 250px;
+  }
+
+  svg {
+    width: 100%;
+
+    #path34,
+    #path36,
+    #path40,
+    #path42,
+    #path46,
+    #path50,
+    #path54,
+    #path58,
+    #path62,
+    #path66,
+    #path70,
+    #path74,
+    #path76,
+    #path80,
+    #path84,
+    #path88,
+    #path92,
+    #path94,
+    #path96,
+    #path98,
+    #path100,
+    #path102,
+    #path104,
+    #path106,
+    #path108,
+    #path110,
+    #path112,
+    #path116,
+    #path118,
+    #path120,
+    #path124,
+    #path128,
+    #path132,
+    #path136,
+    #path140,
+    #path144,
+    #path148,
+    #path152,
+    #path156 {
+      fill: #fff !important;
+      transition: .5s;
+    }
+  }
+}
+
+.header.is-active,
+.header.is-scroll {
+  .logo svg {
+    #path34,
+    #path36,
+    #path40,
+    #path42,
+    #path46,
+    #path50,
+    #path54,
+    #path58,
+    #path62,
+    #path66,
+    #path70,
+    #path74,
+    #path76,
+    #path80,
+    #path84,
+    #path88,
+    #path92,
+    #path94,
+    #path96,
+    #path98,
+    #path100,
+    #path102,
+    #path104,
+    #path106,
+    #path108,
+    #path110,
+    #path112,
+    #path116,
+    #path118,
+    #path120,
+    #path124,
+    #path128,
+    #path132,
+    #path136,
+    #path140,
+    #path144,
+    #path148,
+    #path152,
+    #path156 {
+      fill: #333 !important;
+    }
+  }
+}

@@ -7,7 +7,27 @@ $burger-item-shadow: -1 * $burger-item - ($burger-item-offset - $burger-item) / 
 
 .burger {
   position: relative;
+  z-index: 10;
   display: inline-flex;
+  margin-left: auto;
+
+  @include min(1100) {
+    display: none;
+  }
+}
+
+.header.is-active,
+.header.is-scroll {
+  .burger__label {
+    &::before,
+    &::after {
+      background: #000;
+    }
+
+    &::after {
+      filter: drop-shadow(0 $burger-item-shadow #000);
+    }
+  }
 }
 
 .burger__input {
