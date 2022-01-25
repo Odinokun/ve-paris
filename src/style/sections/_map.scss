@@ -1,15 +1,15 @@
-.map{
-  .container{
+.map {
+  .container {
     padding-top: 56px;
     padding-bottom: 16px;
   }
 }
-.map__title{
+
+.map__title {
   color: $highlight;
 }
-.map__iframe {
-  display: block;
-  width: 100%;
+
+.contacts-map {
   height: 500px;
   max-height: 100vh;
 }

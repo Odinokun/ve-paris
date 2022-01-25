@@ -9,4 +9,5 @@ $(function() {
   require('./modules/back-to-top')();
   require('./modules/cookie')();
   require('./modules/menu')();
+  require('./modules/map')();
 });
