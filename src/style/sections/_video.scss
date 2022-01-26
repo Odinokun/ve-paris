@@ -33,7 +33,7 @@
   width: 100%;
 
   @include min(768) {
-    width: 33%;
+    width: 40%;
   }
 
   img {
@@ -60,7 +60,7 @@
   margin-bottom: 32px;
 
   @include min(768) {
-    width: 67%;
+    width: 60%;
     margin-bottom: 0;
     padding-right: 64px;
     padding-left: 64px;
