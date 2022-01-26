@@ -58,31 +58,37 @@
   }
 }
 
-.header__menu-item {
-  margin-bottom: 16px;
-  margin-left: 32px;
-  padding-top: 3px;
-
-  @include min(1100) {
-    margin-bottom: 0;
-  }
-}
-
-.header__menu-link {
-  font-size: 18px;
+.header__menu-list {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+
+  @include min(1100) {
+    flex-direction: row;
+  }
+}
+
+.header__menu-item {
+  margin-bottom: 16px;
+  padding-top: 3px;
+
+  @include min(1100) {
+    margin-bottom: 0;
+    margin-left: 32px;
+  }
+}
+
+.header__menu-link {
+  font-size: 18px;
   white-space: nowrap;
   text-transform: uppercase;
   color: #fff;
 
   @include min(1100) {
     font-size: 15px;
-    flex-direction: row;
     text-align: left;
   }
   @include min(1340) {

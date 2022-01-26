@@ -11,9 +11,11 @@
 
 .interactive__link {
   display: block;
+  margin-top: -32px;
   margin-bottom: -56px;
 
   @include min(768) {
+    margin-top: 0;
     margin-bottom: -100px;
   }
   @include min(1024) {

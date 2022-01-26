@@ -15,7 +15,8 @@ module.exports = function () {
     // показываем
     cookiewin.style.display = "block";
     // закрываем по клику
-    document.getElementById("cookie_close").addEventListener("click", function () {
+    document.getElementById("cookie_close").addEventListener("click", function (e) {
+      e.preventDefault();
       cookiewin.style.display = "none";
       // записываем cookie на 1 день, с которой мы не показываем окно
       let date = new Date;
