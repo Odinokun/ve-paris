@@ -15,7 +15,7 @@
   margin-bottom: -56px;
 
   @include min(768) {
-    margin-top: 0;
+    margin-top: -48px;
     margin-bottom: -100px;
   }
   @include min(1024) {
