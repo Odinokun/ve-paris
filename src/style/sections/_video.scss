@@ -32,7 +32,7 @@
   width: 100%;
 
   @include min(768) {
-    width: 60%;
+    width: 33%;
   }
 
   img {
@@ -59,10 +59,10 @@
   margin-bottom: 32px;
 
   @include min(768) {
-    width: 40%;
+    width: 67%;
     margin-bottom: 0;
     padding-right: 64px;
-    padding-left: 32px;
+    padding-left: 64px;
   }
   @include min(1024) {
     padding-top: 32px;
@@ -72,7 +72,7 @@
 .video__item:nth-child(even) {
   .video__descr {
     @include min(768) {
-      padding-right: 32px;
+      padding-right: 64px;
       padding-left: 64px;
     }
   }
