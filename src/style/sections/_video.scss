@@ -32,7 +32,7 @@
   width: 100%;
 
   @include min(768) {
-    width: 50%;
+    width: 60%;
   }
 
   img {
@@ -59,7 +59,7 @@
   margin-bottom: 32px;
 
   @include min(768) {
-    width: 50%;
+    width: 40%;
     margin-bottom: 0;
     padding-right: 64px;
     padding-left: 32px;
@@ -105,5 +105,7 @@
   p {
     display: block;
     animation-delay: .7s;
+
+    @include responsive-font(18, 15);
   }
 }

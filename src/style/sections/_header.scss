@@ -41,9 +41,9 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
-  padding-top: 120px;
+  padding-top: 80px;
   transition: .5s;
-  transform: translateY(-100vh);
+  transform: translateY(-150vh);
   background-color: #fff;
 
   @include min(1100) {
@@ -69,7 +69,7 @@
 }
 
 .header__menu-link {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -81,12 +81,12 @@
   color: #fff;
 
   @include min(1100) {
-    font-size: 17px;
+    font-size: 15px;
     flex-direction: row;
     text-align: left;
   }
   @include min(1340) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &:hover {

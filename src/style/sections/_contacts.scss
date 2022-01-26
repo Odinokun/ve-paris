@@ -2,12 +2,13 @@
   background-color: #f6f6f6;
 
   .container {
+    max-width: 1400px;
     padding-top: 56px;
-    padding-bottom: 80px;
+    padding-bottom: 0;
 
-    @include min(768) {
+    @include min(1024) {
       padding-top: 80px;
-      padding-bottom: 80px;
+      padding-bottom: 32px;
     }
   }
 }
@@ -49,7 +50,7 @@
   width: 100%;
 
   @include min(768) {
-    width: calc(50% - 8px);
+    width: calc(50% - 6px);
   }
 }
 
@@ -59,9 +60,9 @@
   display: inline-flex;
   align-items: center;
   width: 100%;
-  height: 50px;
-  margin-bottom: 16px;
-  padding: 0 15px;
+  height: 40px;
+  margin-bottom: 12px;
+  padding: 0 10px;
   color: #000;
   border: 1px solid #bfbfbf;
   border-radius: 0 !important;
@@ -171,6 +172,8 @@ span[aria-labelledby='ui-id-2'] span {
   text-align: left;
   text-transform: none;
   color: $text;
+
+  @include responsive-font(22, 15);
 }
 
 .contacts__links {
@@ -201,6 +204,8 @@ span[aria-labelledby='ui-id-2'] span {
   span {
     transition: .5s;
     color: $text;
+
+    @include responsive-font(17, 14);
   }
 }
 

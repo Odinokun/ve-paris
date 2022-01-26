@@ -1,9 +1,3 @@
-.about {
-  .container {
-    padding-bottom: 0;
-  }
-}
-
 .about__title {
   color: $highlight;
 }
@@ -18,6 +12,7 @@
   text-align: center;
 
   p {
+    @include responsive-font(18, 15);
     @include min(768) {
       margin-bottom: 32px;
     }

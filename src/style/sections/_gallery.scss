@@ -17,12 +17,16 @@
 }
 
 .gallery__descr {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 
   p {
     @include min(768) {
       margin-bottom: 32px;
     }
+    @include responsive-font(18, 15);
 
     &:last-child {
       margin-bottom: 0;
@@ -83,7 +87,7 @@
           line-height: 1.5;
           max-width: 900px;
 
-          @include responsive-font(24, 16);
+          @include responsive-font(22, 15);
         }
       }
     }
@@ -126,11 +130,32 @@
   z-index: 1;
   color: #fff;
 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-  p {
+    p {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 6px;
+        left: -13px;
+        width: 6px;
+        height: 6px;
+        content: '';
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    }
+  }
+
+  p,
+  li {
     line-height: 1.25;
 
-    @include responsive-font(18, 16);
+    @include responsive-font(16, 14);
   }
 }
 
