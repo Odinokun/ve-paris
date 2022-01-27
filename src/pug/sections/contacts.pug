@@ -7,7 +7,7 @@
     //- begin contacts__row
     .contacts__row
       //- begin contacts__form
-      form.contacts__form.fadeInLeft.animate__animated(action='https://formspree.io/f/mknynkol' method='post')
+      form.contacts__form.fadeInLeft.animate__animated#my-form(action="https://formspree.io/f/mnqwjyno" method='post')
         input.contacts__input.form-control(type='text' name='name' placeholder='Name *' required)
         input.contacts__input.form-control(type='text' name='lastname' placeholder='Last Name *' required)
         .contacts__form-section
@@ -269,6 +269,7 @@
         input.contacts__input.form-control(type='email' name='email' placeholder='Email *' required)
         input.contacts__input.form-control(type='text' name='message' placeholder='Comments *' required)
         button.contacts__btn.submit(type='submit') Send
+        p#my-form-status
       //- end   contacts__form
 
       .contacts__info

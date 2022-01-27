@@ -58,6 +58,8 @@
 .video__descr {
   width: 100%;
   margin-bottom: 32px;
+  padding-right: 24px;
+  padding-left: 24px;
 
   @include min(768) {
     width: 60%;
